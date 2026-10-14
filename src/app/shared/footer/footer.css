@@ -1,0 +1,169 @@
+.footer {
+  background: var(--footer-bg);
+  border-top: 1px solid var(--footer-border);
+  color: var(--footer-text);
+  padding-top: 3.5rem;
+}
+
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.4fr;
+  gap: 2rem;
+}
+
+.footer-col h4 {
+  color: var(--footer-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  font-size: 0.9rem;
+}
+
+.footer-col a {
+  color: var(--footer-text);
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.footer-brand .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.brand-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--accent), var(--icon-blue-3));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.brand-desc {
+  color: var(--footer-text-muted);
+  line-height: 1.5;
+  max-width: 26ch;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--footer-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.footer-newsletter p {
+  color: var(--footer-text-muted);
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.subscribe-form input {
+  flex: 1;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--footer-border);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  color: #fff;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.subscribe-form input::placeholder {
+  color: var(--footer-text-muted);
+}
+
+.subscribe-form button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.subscribe-form button:hover {
+  background: var(--accent-hover);
+}
+
+.subscribe-note {
+  color: var(--icon-green);
+  font-size: 0.8rem;
+}
+
+.footer-bottom {
+  max-width: 1280px;
+  margin: 0 auto;
+  border-top: 1px solid var(--footer-border);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--footer-text-muted);
+}
+
+@media (max-width: 980px) {
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
